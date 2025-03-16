@@ -1,5 +1,5 @@
 name: setup nodejs
-on: workflow_dispatch
+on: push
 jobs:
   setup_nodejs:
     runs-on: ubuntu-latest
@@ -10,7 +10,7 @@ jobs:
         node-version: 18
     - run: npm install --package-lock-only
     - run: npm ci
-    - run: npm test
+    - run: npm ci renovate@20.5.1
     
     
     
