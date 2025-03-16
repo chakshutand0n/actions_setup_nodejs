@@ -1,5 +1,5 @@
 name: setup nodejs
-on: push
+on: workflow_dispatch
 jobs:
   setup_nodejs:
     runs-on: ubuntu-latest
